@@ -1,0 +1,2 @@
+github "p2/OAuth2" ~> 3.0
+github "matthewpalmer/Locksmith" ~> 3.0

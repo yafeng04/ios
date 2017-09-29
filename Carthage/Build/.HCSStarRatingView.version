@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.5",
+  "iOS" : [
+    {
+      "hash" : "553a91506194023be56b21dcb00b2051e1e88d684251902169c969cacd968f30",
+      "name" : "HCSStarRatingView"
+    }
+  ]
+}
