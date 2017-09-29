@@ -2,6 +2,9 @@
 //  YelpClient.swift
 //  RestaurantReviews
 //
+//  Created by Screencast on 6/5/17.
+//  Copyright © 2017 Treehouse. All rights reserved.
+//
 
 import Foundation
 

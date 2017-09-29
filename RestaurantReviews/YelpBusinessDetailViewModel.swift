@@ -1,6 +1,9 @@
+//
 //  YelpBusinessDetailViewModel.swift
 //  RestaurantReviews
 //
+//  Created by Pasan Premaratne on 5/9/17.
+//  Copyright © 2017 Treehouse. All rights reserved.
 //
 
 import Foundation
@@ -11,8 +14,8 @@ struct YelpBusinessDetailViewModel {
     let rating: Double
     let ratingsCount: String
     let categories: String
-    let hours: String
-    let currentStatus: String
+//    let hours: String
+//    let currentStatus: String
 }
 
 extension YelpBusinessDetailViewModel {
@@ -24,24 +27,22 @@ extension YelpBusinessDetailViewModel {
         
         self.categories = business.categories.map({ $0.title }).joined(separator: ", ")
         
-        guard let hours = business.hours else { return nil }
-        
-        for day in hours.schedule {
-            print(day.day)
-        }
-        
-        let currentDayValue = Date.currentDay
-        print("Current Day: \(currentDayValue)")
+//        guard let hours = business.hours else { return nil}
+//        
+//        for day in hours.schedule {
+//            print(day.day)
+//        }
+//        
+//        let currentDayValue = Date.currentDay
+//        print("Current Day: \(currentDayValue)")
 //        let today = hours.schedule.filter({ $0.day.rawValue == Date.currentDay }).first!
-        
+//        
 //        let startString = DateFormatter.stringFromDateString(today.start, withInputDateFormat: "HHmm")
 //        let endString = DateFormatter.stringFromDateString(today.end, withInputDateFormat: "HHmm")
-        
-        let startString = "aa"
-        let endString = "bb"
-        
-        self.hours = "Hours Today: \(startString) - \(endString)"
-        self.currentStatus = business.isClosed ? "Closed" : "Open"
+//        
+//        
+//        self.hours = "Hours Today: \(startString) - \(endString)"
+//        self.currentStatus = business.isClosed ? "Closed" : "Open"
     }
 }
 

@@ -2,6 +2,8 @@
 //  YelpReviewsDataSource.swift
 //  RestaurantReviews
 //
+//  Created by Pasan Premaratne on 5/9/17.
+//  Copyright © 2017 Treehouse. All rights reserved.
 //
 
 import Foundation
@@ -31,11 +33,9 @@ class YelpReviewsDataSource: NSObject, UITableViewDataSource {
         let review = object(at: indexPath)
         let viewModel = ReviewCellViewModel(review: review)
         
-        
         cell.configure(with: viewModel)
         
         return cell
-        
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

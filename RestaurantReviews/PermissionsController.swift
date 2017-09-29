@@ -2,6 +2,8 @@
 //  PermissionsController.swift
 //  RestaurantReviews
 //
+//  Created by Pasan Premaratne on 5/9/17.
+//  Copyright © 2017 Treehouse. All rights reserved.
 //
 
 import UIKit
@@ -11,8 +13,8 @@ import CoreLocation
 class PermissionsController: UIViewController, LocationPermissionsDelegate {
     
     let oauth = OAuth2ClientCredentials(settings: [
-            "client_id": "7ufbRy35DvWPjU4sPsiU3g",
-            "client_secret": "GO5wlTxQv6XXsjTwuCaFe4W78NFKTzINAVZ8vIsZNqzTPe9HYYFzieI9PQOtb3un",
+            "client_id": "MqV3bYw__Dpfmh9Q3ZH6ag",
+            "client_secret": "Pk12UtWpaatqtc4lnpe3CHb7gOs1r0AjpVvg2fZkD7Z9E6DwjlwQNnHysuvoQUoD",
             "authorize_uri": "https://api.yelp.com/oauth2/token",
             "secret_in_body": true,
             "keychain": false

@@ -2,6 +2,9 @@
 //  YelpSearchResultsDataSource.swift
 //  RestaurantReviews
 //
+//  Created by Pasan Premaratne on 5/9/17.
+//  Copyright © 2017 Treehouse. All rights reserved.
+//
 
 import Foundation
 
@@ -29,9 +32,7 @@ class YelpSearchResultsDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultCell", for: indexPath)
         
         let business = object(at: indexPath)
-    
-        
-        cell.textLabel?.text = business.name+"   " + business.price + "   " + String(format: "%.1f",business.rating)
+        cell.textLabel?.text = business.name
         
         return cell
     }

@@ -1,13 +1,15 @@
 //
 //  YelpBusinessDetailController.swift
 //  RestaurantReviews
-
+//
+//  Created by Pasan Premaratne on 5/9/17.
+//  Copyright © 2017 Treehouse. All rights reserved.
 //
 
 import UIKit
 
 class YelpBusinessDetailController: UITableViewController {
-
+    
     @IBOutlet weak var restaurantNameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var ratingsCountLabel: UILabel!
@@ -31,7 +33,7 @@ class YelpBusinessDetailController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupTableView()
         
         if let business = business, let viewModel = YelpBusinessDetailViewModel(business: business) {
@@ -48,10 +50,10 @@ class YelpBusinessDetailController: UITableViewController {
         priceLabel.text = viewModel.price
         ratingsCountLabel.text = viewModel.ratingsCount
         categoriesLabel.text = viewModel.categories
-        hoursLabel.text = viewModel.hours
-        currentHoursStatusLabel.text = viewModel.currentStatus
+//        hoursLabel.text = viewModel.hours
+//        currentHoursStatusLabel.text = viewModel.currentStatus
     }
-
+    
     // MARK: - Table View
     
     func setupTableView() {
@@ -61,6 +63,18 @@ class YelpBusinessDetailController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toDetailsSegue"{
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let destVC = segue.destination as! DetailsViewController
+                destVC.titleText = business?.reviews[indexPath.row].text
+            }
+        }
+    }
+    
+    
 }
 
 

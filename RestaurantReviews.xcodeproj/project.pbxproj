@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87D2FE981F7DE265008A27C6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D2FE971F7DE265008A27C6 /* DetailsViewController.swift */; };
 		97D629DA1EC23110007BE0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D629D91EC23110007BE0CE /* AppDelegate.swift */; };
 		97D629DC1EC23110007BE0CE /* YelpSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D629DB1EC23110007BE0CE /* YelpSearchController.swift */; };
 		97D629DF1EC23110007BE0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D629DD1EC23110007BE0CE /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87D2FE971F7DE265008A27C6 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		97D629D61EC23110007BE0CE /* RestaurantReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D629D91EC23110007BE0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97D629DB1EC23110007BE0CE /* YelpSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpSearchController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				97D62A121EC2398C007BE0CE /* YelpReviewsDataSource.swift */,
 				97D62A141EC239D6007BE0CE /* ReviewCell.swift */,
 				97D62A161EC245BB007BE0CE /* ReviewCellViewModel.swift */,
+				87D2FE971F7DE265008A27C6 /* DetailsViewController.swift */,
 			);
 			name = "Business Details";
 			sourceTree = "<group>";
@@ -225,11 +228,10 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "";
+				ORGANIZATIONNAME = iphone100plus;
 				TargetAttributes = {
 					97D629D51EC23110007BE0CE = {
 						CreatedOnToolsVersion = 8.2;
-						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -295,6 +297,7 @@
 			files = (
 				97D629FB1EC232FA007BE0CE /* JSONDecodable.swift in Sources */,
 				97D629F81EC23226007BE0CE /* YelpTransaction.swift in Sources */,
+				87D2FE981F7DE265008A27C6 /* DetailsViewController.swift in Sources */,
 				97D629F61EC23208007BE0CE /* Coordinate.swift in Sources */,
 				97D62A111EC2395E007BE0CE /* YelpBusinessDetailViewModel.swift in Sources */,
 				BE40114F1EE5BBAF0054BFF0 /* YelpClient.swift in Sources */,
@@ -439,7 +442,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,8 +451,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RestaurantReviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RestaurantReviews/RestaurantReviews-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -459,7 +459,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +468,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RestaurantReviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RestaurantReviews/RestaurantReviews-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

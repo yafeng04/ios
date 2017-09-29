@@ -2,6 +2,8 @@
 //  LocationManager.swift
 //  RestaurantReviews
 //
+//  Created by Screencast on 5/30/17.
+//  Copyright © 2017 Treehouse. All rights reserved.
 //
 
 import Foundation
@@ -9,18 +11,10 @@ import CoreLocation
 
 extension Coordinate {
     init(location: CLLocation) {
-//        self.latitude = location.coordinate.latitude
-//        self.longitude = location.coordinate.longitude
-        
-        let random = drand48() * 0.0001
-        
-        self.latitude = -37.8091341 + random
-        
-        self.longitude = 144.9666907 + random
-        
+        self.latitude = -37.8132
+        self.longitude = 144.963
     }
-}
-
+} 
 
 enum LocationError: Error {
     case unknownError

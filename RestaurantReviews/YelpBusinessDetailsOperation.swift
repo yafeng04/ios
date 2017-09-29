@@ -2,6 +2,9 @@
 //  YelpBusinessDetailsOperation.swift
 //  RestaurantReviews
 //
+//  Created by Screencast on 6/13/17.
+//  Copyright © 2017 Treehouse. All rights reserved.
+//
 
 import Foundation
 
@@ -26,9 +29,9 @@ class YelpBusinessDetailsOperation: Operation {
         }
         
         set {
-            willChangeValue(forKey: "isFinished")//notification
+            willChangeValue(forKey: "isFinished")
             _finished = newValue
-            didChangeValue(forKey: "isFinished")//notification
+            didChangeValue(forKey: "isFinished")
         }
     }
     
@@ -63,7 +66,6 @@ class YelpBusinessDetailsOperation: Operation {
                 self.isFinished = true
             }
         }
-        
     }
 }
 
